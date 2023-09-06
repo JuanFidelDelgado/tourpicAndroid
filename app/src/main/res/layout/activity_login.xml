@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".view.ui.activities.LoginActivity">
+
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:contentDescription="Logo de la aplicacion"
+        android:src="@drawable/logocolor"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <EditText
+        android:id="@+id/txtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/logoView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/blanco"
+        android:textColorHint="@color/blanco"
+        android:fontFamily="@font/bebasneueregular"
+        android:hint="Usuario"
+        android:background="@drawable/edit_text_style"
+        />
+
+    <EditText
+        android:id="@+id/txtUserPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtUserName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:fontFamily="@font/bebasneueregular"
+        android:background="@drawable/edit_text_style"
+        android:textColorHint="@color/blanco"
+        android:textColor="@color/blanco"/>
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:enabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtUserPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/button_style"
+        android:text="Ingresar"
+        android:fontFamily="@font/bebasneueregular"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:enabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnIngresar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/realce"
+        android:text="Registrarme"
+        android:fontFamily="@font/bebasneueregular"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        android:background="@drawable/button_style"/>
+
+    <TextView
+        android:id="@+id/btnRecuperar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegistrar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/blanco"
+        android:text="@string/recuperar"
+        android:textAlignment="center"
+        android:fontFamily="@font/bebasneueregular"/>
+
+</RelativeLayout>

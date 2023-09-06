@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primario">#aef5f6</color>
+    <color name="primarioacento">#84f4fb</color>
+    <color name="secundarioacento">#d86283</color>
+    <color name="secundario">#f6bcbd</color>
+    <color name="realce">#efc15d</color>
+    <color name="negro">#FF000000</color>
+    <color name="blanco">#FFFFFFFF</color>
+</resources>
